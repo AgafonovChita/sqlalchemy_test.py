@@ -19,6 +19,7 @@ async def main():
 
     async_session = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 
+    # model MemberChannel
     request = ChannelMember(
         request_id=43562523000,
         user_id=43562523,
